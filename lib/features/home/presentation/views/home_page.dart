@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_movie_app/features/home/presentation/views/widgets/card_swiper.dart';
+import 'package:flutter_movie_app/features/home/presentation/views/widgets/header_home.dart';
+import 'package:flutter_movie_app/features/home/presentation/views/widgets/search_home.dart';
+import 'package:flutter_movie_app/features/home/presentation/views/widgets/upcoming_movies.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -7,30 +9,19 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black12,
-      appBar: AppBar(
-        title: const Text(
-          'Estrenos',
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'Calibri',
+      backgroundColor: Colors.black,
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+              HeaderHome(),
+              SearchHome(),
+              SizedBox(height: 30),
+              UpcomingMovies(),
+            ],
           ),
         ),
-        elevation: 0,
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.person,
-            ),
-          ),
-        ],
-      ),
-      body: Column(
-        children: const [
-          CardSwipper(),
-        ],
       ),
     );
   }
