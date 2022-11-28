@@ -18,9 +18,10 @@ class MyApp extends StatelessWidget {
         'details': (_) => const DetailsPage(),
       },
       theme: ThemeData.light().copyWith(
-          appBarTheme: const AppBarTheme(
-        color: Color(0xFF0F111D),
-      )),
+        appBarTheme: const AppBarTheme(
+          color: Color(0xFF0F111D),
+        ),
+      ),
     );
   }
 }
