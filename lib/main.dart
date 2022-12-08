@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Movies App',
-      initialRoute: 'home',
+      initialRoute: 'detail',
       routes: {
         'home': (_) => const HomePage(),
         'details': (_) => const DetailsPage(),
