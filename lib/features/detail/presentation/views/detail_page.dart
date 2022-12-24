@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_movie_app/features/home/presentation/views/widgets/button_play.dart';
 import 'package:flutter_movie_app/features/home/presentation/views/widgets/buttons.dart';
 import 'package:flutter_movie_app/widgets/movies_nav_bar.dart';
 
@@ -16,8 +15,8 @@ class DetailsPage extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 10),
-            DetailsHeader(),
-            SizedBox(
+            const DetailsHeader(),
+            const SizedBox(
               height: 20,
             ),
             Row(

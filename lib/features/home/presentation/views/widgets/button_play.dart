@@ -14,7 +14,7 @@ class ButtonPlay extends StatelessWidget {
       ),
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-        fixedSize: Size(70, 70),
+        fixedSize: const Size(70, 70),
         backgroundColor: Colors.deepOrange,
       ),
     );
