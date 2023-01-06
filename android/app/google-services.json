@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "503270508823",
+    "project_id": "peliculitas-b52a8",
+    "storage_bucket": "peliculitas-b52a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503270508823:android:aaea0c0bbf35e76859cf52",
+        "android_client_info": {
+          "package_name": "com.example.flutter_movie_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503270508823-u49ecqqs18p347u6jdh1go2147o988og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD_oc8k11pHY8rU9Uc5r6wPfpdZ18nxsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503270508823-u49ecqqs18p347u6jdh1go2147o988og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
