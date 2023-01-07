@@ -1,20 +1,20 @@
 part of 'login_cubit.dart';
 
+enum LoginStatus {
+  initial,
+  loading,
+  error,
+  sucessfull,
+  register,
+}
+
 class LoginCubitState extends Equatable {
-  const LoginCubitState({required this.message});
-  final String message;
-  factory LoginCubitState.loging() => const LoginCubitState(message: 'wait');
-  factory LoginCubitState.error() => const LoginCubitState(message: 'no');
-  factory LoginCubitState.sucessfull() => const LoginCubitState(message: 'ok');
+  final LoginStatus status;
+  const LoginCubitState.initial() : status = LoginStatus.initial;
+  const LoginCubitState.loading() : status = LoginStatus.loading;
+  const LoginCubitState.error() : status = LoginStatus.error;
+  const LoginCubitState.sucessfull() : status = LoginStatus.sucessfull;
 
   @override
-  List<Object> get props => [message];
-
-  LoginCubitState copyWith({
-    String? message,
-  }) {
-    return LoginCubitState(
-      message: message ?? this.message,
-    );
-  }
+  List<Object> get props => [status];
 }
