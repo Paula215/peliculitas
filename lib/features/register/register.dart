@@ -24,10 +24,16 @@ class RegisterPage extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
+                  const Text(
+                    'R E G I S T E R',
+                    style: TextStyle(color: Color.fromARGB(233, 231, 228, 228)),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                  ),
                   const Cajita(
                     label: 'Insert name',
                     placeholder: 'name',
-                    email: true,
                   ),
                   const SizedBox(
                     height: 20,
@@ -43,10 +49,10 @@ class RegisterPage extends StatelessWidget {
                   const Cajita(
                     label: 'Insert password',
                     placeholder: '',
-                    email: true,
+                    invisible: true,
                   ),
                   const SizedBox(
-                    height: 80,
+                    height: 60,
                   ),
                   ButtonL(
                       onTap: () {
